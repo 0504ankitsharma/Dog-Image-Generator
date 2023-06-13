@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Type in a dog breed's name and one randomly selected image will appear"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Get a Pic of a Specific Dog Breed</title>
+  </head>
+  <body>
+    <form>
+      <label for="dog-pics"
+        > <h1>Which breed do you want to see?</h1><br />
+      </label>
+      <input
+        id="dog-pics"
+        type="text"
+        pattern="/[^,_0-9]/g"
+        placeholder="type dog breed here"
+        required="required"
+      />
+      <button type="submit" class="js-button">
+        Get dog!
+      </button>
+    </form>
+    <section class="image-results"></section>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
